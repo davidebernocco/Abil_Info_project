@@ -3,7 +3,7 @@
 echo "Hello dear user, if you still haven't done it yet, PLEASE SPECIFY THE PATH IN THE BASH FILE"
 
 # SPECIFY THE LOCATION WHERE YOU WOULD LIKE THE FOLDER TO BE CREATED:
-path=/home/utente/University/AbilInfo22_23/Data
+path=/choose/the/location/you/prefer/on/your/device
 
 # Make the directory 'Bernocco_AbilInfo' in the specified location
 mkdir $path/Bernocco_AbilInfo
