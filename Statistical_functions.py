@@ -4,11 +4,11 @@ import math as mt
 
 # Evaluate the mean of each of the 9 Nbins x Nmeasures matrices in the 
 def Mean():
-  Mn= [list(list([]) for y in range(3)) for x in range(len(test))]
-  for j in range(len(test)):
-      for k in range(3):
-          Mn[j][k].append(np.mean(measures[j][k],axis=1))
-  return Mn
+    Mn= [list(list([]) for y in range(3)) for x in range(len(test))]
+    for j in range(len(test)):
+        for k in range(3):
+            Mn[j][k].append(np.mean(measures[j][k],axis=1))
+    return Mn
 
 
 # Evaluate the covariance matrices:
