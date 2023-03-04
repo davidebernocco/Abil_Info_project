@@ -25,7 +25,7 @@ def Covariance_M(Nm, Nb, Mean1, Mean2, Matrix1, Matrix2):
   
   
   # Evaluate the correlation matrices:
-  def Correlation_M(MatrixC, Nb):
+def Correlation_M(MatrixC, Nb):
     corr_matr = np.zeros((Nb,Nb),dtype=float)
     for i in range(Nb):
         for j in range(Nb):
@@ -43,7 +43,7 @@ def Correlation_theor(Nb, x, sig1, l1, sig2, l2):
   
   
   # Evaluate the residuals between measured and theoretical self-correlation and cross-correlation matrices:
-  def Residuals_M(Cth, C, R, Nb, Nm):
+def Residuals_M(Cth, C, R, Nb, Nm):
     res_matr = np.zeros((Nb,Nb),dtype=float)
     for i in range(Nb):
         for j in range(Nb):
@@ -52,7 +52,7 @@ def Correlation_theor(Nb, x, sig1, l1, sig2, l2):
   
   
   # Calculate the standard deviation of the unwrapped residual matrices ( now seen as (Nbins)^2 long arrays)
-  def Stdv(resM, Nb):
+def Stdv(resM, Nb):
     rms_deviation = []
     for m in range(len(Res)):
         rms_deviation.append(np.std(resM[m].reshape(Nb**2)))
@@ -60,7 +60,7 @@ def Correlation_theor(Nb, x, sig1, l1, sig2, l2):
   
   
   # Tests which theoretical multipole covariance corresponds to the selected measured covariance:
-  def Test(vet):
+def Test(vet):
     for i in range(len(vet)):
         minimum = np.min(np.abs(1-vet[i]))
         for j in range(6):
