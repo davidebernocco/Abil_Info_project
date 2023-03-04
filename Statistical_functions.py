@@ -54,7 +54,7 @@ def Residuals_M(Cth, C, R, Nb, Nm):
 # Calculate the standard deviation of the unwrapped residual matrices ( now seen as (Nbins)^2 long arrays)
 def Stdv(resM, Nb):
     rms_deviation = []
-    for m in range(len(Res)):
+    for m in range(len(ResM)):
         rms_deviation.append(np.std(resM[m].reshape(Nb**2)))
     return rms_deviation
   
