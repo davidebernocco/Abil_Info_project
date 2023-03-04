@@ -13,7 +13,7 @@ def Mean(ls_test, matr_meas):
 
 # Evaluate the covariance matrices:
 def Covariance_M(Nm, Nb, Mean1, Mean2, Matrix1, Matrix2):
-    covar_matr = np.zeros((Nbins,Nbins),dtype=float)
+    covar_matr = np.zeros((Nb,Nb),dtype=float)
     for i in range(Nb):
         for j in range(Nb):
             Sum = 0
