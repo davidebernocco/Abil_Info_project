@@ -6,7 +6,7 @@ What you just need in order to put your hands on the code and make it run is sim
 `chmod +x Bash_Script.sh`\
 `bash Bash_Script.sh`
 
-It will download and arrange all the data sets needed for the analysis alonside the jupyter notebook and the library Statistical_functions in a folder you have to specify.\
+It will download and arrange all the data sets needed for the analysis alongside the jupyter notebook and the library Statistical_functions in a folder you have to specify.\
 Then just execute from terminal:
 
 `cd /the/choosen/path/for/the/folder/Bernocco_AbilInfo`\
